@@ -1,6 +1,7 @@
 <?php
     include 'connection.php';
-    $data = $_POST['results'];
+    $data = (array)json_decode(file_get_contents("php://input"));
+    $data = $data['results'];
     $d = file_get_contents(__DIR__ . '/data/fixtures.json');
     $fixtures = json_decode($d);
     if (sizeof($fixtures) == 0) {
