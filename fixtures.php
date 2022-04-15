@@ -1,5 +1,6 @@
 <?php
-    $data = (array)json_decode(file_get_contents("php://input"))['fixtures'];
+    $data = (array)json_decode(file_get_contents("php://input"));
+    $data = $data['fixtures'];
     $prevData = file_get_contents(__DIR__ . '/data/fixtures.json');
     $milli = round(microtime(true) * 1000);
     $minutes = round($milli/60000);
