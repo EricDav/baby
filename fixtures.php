@@ -1,5 +1,6 @@
 <?php
     $data = $_POST['fixtures'];
+    file_put_contents(__DIR__ . '/data/post.json', json_encode($_POST));
     $prevData = file_get_contents(__DIR__ . '/data/fixtures.json');
     $milli = round(microtime(true) * 1000);
     $minutes = round($milli/60000);
