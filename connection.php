@@ -19,10 +19,10 @@
                 ),
         
                 'production' => array(
-                    'user' => 'basecoi1_coinbase',
-                    'password' => 'coinbase123',
+                    'user' => 'corretio_cargo',
+                    'password' => 'Iloveodunayo123',
                     'host' => 'localhost',
-                    'database' => 'basecoi1_crypto',
+                    'database' => 'corretio_cargo',
                     'port' => 3306
                 )
             );
