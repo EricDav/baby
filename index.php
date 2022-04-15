@@ -6,6 +6,9 @@
         include 'fixtures.php'; exit;
     } else if ($url === '/results') {
         include 'results.php'; exit;
+    } else {
+        echo 'It is working...'; 
+        exit;
     }
 
 ?>
